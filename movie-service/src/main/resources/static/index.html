@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Dashboard</title>
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Add your styles here -->
+</head>
+<body>
+    <!-- Top Dashboard -->
+    <header class="dashboard">
+        <nav class="menu">
+            <div class="menu-left">
+                <a href="#">Movies</a>
+                <a href="#">Lists</a>
+                <a href="#">Search</a>
+            </div>
+            <div class="menu-right">
+                <a href="/login.html" id="login-link">Login</a>
+                <a href="/signup.html" id="signup-link">Sign In</a>
+                <!-- Account dropdown (hidden until logged in) -->
+                <div id="account-dropdown" class="dropdown hidden">
+                    <span>Account</span>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Your Lists</a>
+                        <a href="#">Friends</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Background Section -->
+    <section class="background">
+        <div class="movie-wallpaper">
+            <img id="random-movie-img" src="/images/random-movie.jpg" alt="Random Movie Wallpaper">
+            <h1 id="movie-title">Random Movie Name</h1>
+        </div>
+    </section>
+
+    <!-- Most Searched Movies -->
+    <section class="most-searched">
+        <h2>Most Searched Movies</h2>
+        <div class="movie-grid">
+            <!-- Movie posters -->
+            <div class="movie-poster"><img src="/images/movie1.jpg" alt="Movie 1"></div>
+            <div class="movie-poster"><img src="/images/movie2.jpg" alt="Movie 2"></div>
+            <div class="movie-poster"><img src="/images/movie3.jpg" alt="Movie 3"></div>
+        </div>
+    </section>
+
+    <!-- Random Suggestions -->
+    <section class="suggestions">
+        <h2>Suggestions for You</h2>
+        <div class="suggestion-grid">
+            <!-- Suggested movies -->
+            <div class="movie-poster"><img src="/images/suggestion1.jpg" alt="Suggestion 1"></div>
+            <div class="movie-poster"><img src="/images/suggestion2.jpg" alt="Suggestion 2"></div>
+            <div class="movie-poster"><img src="/images/suggestion3.jpg" alt="Suggestion 3"></div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="/js/scripts.js"></script> <!-- Add custom functionality -->
+</body>
+</html>

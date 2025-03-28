@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Dashboard Section */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.dashboard .menu a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.dashboard .menu-right .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dashboard .menu-right .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1;
+}
+
+.dashboard .menu-right .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Background Section */
+.background {
+    position: relative;
+    height: 60vh;
+    background: url('/images/default-wallpaper.jpg') no-repeat center center/cover;
+}
+
+.background h1 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    font-size: 2.5rem;
+}
+
+/* Most Searched Movies and Suggestions Section */
+.most-searched, .suggestions {
+    padding: 20px;
+    text-align: center;
+}
+
+.movie-grid, .suggestion-grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.movie-poster img {
+    width: 150px;
+    height: 225px;
+    border-radius: 5px;
+}
